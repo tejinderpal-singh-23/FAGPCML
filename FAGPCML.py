@@ -39,44 +39,44 @@ Temperature = st.number_input('Curing temperature in degree centigrates')
 Curing_age = st.number_input('Curing age in days')
 
         
-    input1 = [Fine_aggregates_content, Coarse_aggregates_content, Molarity, Sodium_hydroxide_content, Sodium_silicate_content, Fly_ash_content, Water_content, Superplasticizer_content, Temperature, Curing_age]
-    input1 = np.array(input1).reshape(1, -1)
+input1 = [Fine_aggregates_content, Coarse_aggregates_content, Molarity, Sodium_hydroxide_content, Sodium_silicate_content, Fly_ash_content, Water_content, Superplasticizer_content, Temperature, Curing_age]
+input1 = np.array(input1).reshape(1, -1)
     
-    if selected_model == 'RF_model':
-        CS = RF.predict(input1)
-        st.write("Predicted compressive strength is: " + str(CS) + " MPa")
-        elif selected_model == 'DTR_model':
-        CS = DTR.predict(input1)
-        st.write("Predicted compressive strength is: " + str(CS) + " MPa")
-        elif selected_model == 'SVR_model':
-        CS = SVR.predict(input1)
-        st.write("Predicted compressive strength is: " + str(CS) + " MPa")
-        elif selected_model == 'GBR_model':
-        CS = GBR.predict(input1)
-        st.write("Predicted compressive strength is: " + str(CS) + " MPa")
-        elif selected_model == 'KNN_model':
-        CS = KNN.predict(input1)
-        st.write("Predicted compressive strength is: " + str(CS) + " MPa")
-        elif selected_model == 'ETR_model':
-        CS = ETR.predict(input1)
-        st.write("Predicted compressive strength is: " + str(CS) + " MPa")
-        elif selected_model == 'BG_model':
-        CS = BG.predict(input1)
-        st.write("Predicted compressive strength is: " + str(CS) + " MPa")
-        elif selected_model == 'ADA_model':
-        CS = ADA.predict(input1)
-        st.write("Predicted compressive strength is: " + str(CS) + " MPa")
-        elif selected_model == 'XGB_model':
-        CS = XGB.predict(input1)
-        st.write("Predicted compressive strength is: " + str(CS) + " MPa")
-        elif selected_model == 'MLP_model':
-        CS = MLP.predict(input1)
-        st.write("Predicted compressive strength is: " + str(CS) + " MPa")
-        elif selected_model == 'LR_model':
-        CS = LR.predict(input1)
-        st.write("Predicted compressive strength is: " + str(CS) + " MPa")
-        else:
-        st.write("Error in inputs: Compressive strength could not be predicted.")
+if selected_model == 'RF_model':
+    CS = RF.predict(input1)
+    st.write("Predicted compressive strength is: " + str(CS) + " MPa")
+    elif selected_model == 'DTR_model':
+    CS = DTR.predict(input1)
+    st.write("Predicted compressive strength is: " + str(CS) + " MPa")
+    elif selected_model == 'SVR_model':
+    CS = SVR.predict(input1)
+    st.write("Predicted compressive strength is: " + str(CS) + " MPa")
+    elif selected_model == 'GBR_model':
+    CS = GBR.predict(input1)
+    st.write("Predicted compressive strength is: " + str(CS) + " MPa")
+    elif selected_model == 'KNN_model':
+    CS = KNN.predict(input1)
+    st.write("Predicted compressive strength is: " + str(CS) + " MPa")
+    elif selected_model == 'ETR_model':
+    CS = ETR.predict(input1)
+    st.write("Predicted compressive strength is: " + str(CS) + " MPa")
+    elif selected_model == 'BG_model':
+    CS = BG.predict(input1)
+    st.write("Predicted compressive strength is: " + str(CS) + " MPa")
+    elif selected_model == 'ADA_model':
+    CS = ADA.predict(input1)
+    st.write("Predicted compressive strength is: " + str(CS) + " MPa")
+    elif selected_model == 'XGB_model':
+    CS = XGB.predict(input1)
+    st.write("Predicted compressive strength is: " + str(CS) + " MPa")
+    elif selected_model == 'MLP_model':
+    CS = MLP.predict(input1)
+    st.write("Predicted compressive strength is: " + str(CS) + " MPa")
+    elif selected_model == 'LR_model':
+    CS = LR.predict(input1)
+    st.write("Predicted compressive strength is: " + str(CS) + " MPa")
+    else:
+    st.write("Error in inputs: Compressive strength could not be predicted.")
 
 st.write("Note: The predicted values are based on machine learning models developed by the author. "
          "The research is in initial stages and the values are just for giving a rough idea of the properties of Fly ash based geopolymer concrete. "
