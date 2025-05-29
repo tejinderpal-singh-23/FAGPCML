@@ -1,6 +1,6 @@
 import streamlit as st
 from PIL import Image
-import joblib
+pip install joblib
 import pandas as pd
 import numpy as np
 
