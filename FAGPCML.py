@@ -45,37 +45,37 @@ input1 = np.array(input1).reshape(1, -1)
 if selected_model == 'RF_model':
     CS = RF.predict(input1)
     st.write("Predicted compressive strength is: " + str(CS) + " MPa")
-    elif selected_model == 'DTR_model':
+elif selected_model == 'DTR_model':
     CS = DTR.predict(input1)
     st.write("Predicted compressive strength is: " + str(CS) + " MPa")
-    elif selected_model == 'SVR_model':
+elif selected_model == 'SVR_model':
     CS = SVR.predict(input1)
     st.write("Predicted compressive strength is: " + str(CS) + " MPa")
-    elif selected_model == 'GBR_model':
+elif selected_model == 'GBR_model':
     CS = GBR.predict(input1)
     st.write("Predicted compressive strength is: " + str(CS) + " MPa")
-    elif selected_model == 'KNN_model':
+elif selected_model == 'KNN_model':
     CS = KNN.predict(input1)
     st.write("Predicted compressive strength is: " + str(CS) + " MPa")
-    elif selected_model == 'ETR_model':
+elif selected_model == 'ETR_model':
     CS = ETR.predict(input1)
     st.write("Predicted compressive strength is: " + str(CS) + " MPa")
-    elif selected_model == 'BG_model':
+elif selected_model == 'BG_model':
     CS = BG.predict(input1)
     st.write("Predicted compressive strength is: " + str(CS) + " MPa")
-    elif selected_model == 'ADA_model':
+elif selected_model == 'ADA_model':
     CS = ADA.predict(input1)
     st.write("Predicted compressive strength is: " + str(CS) + " MPa")
-    elif selected_model == 'XGB_model':
+elif selected_model == 'XGB_model':
     CS = XGB.predict(input1)
     st.write("Predicted compressive strength is: " + str(CS) + " MPa")
-    elif selected_model == 'MLP_model':
+elif selected_model == 'MLP_model':
     CS = MLP.predict(input1)
     st.write("Predicted compressive strength is: " + str(CS) + " MPa")
-    elif selected_model == 'LR_model':
+elif selected_model == 'LR_model':
     CS = LR.predict(input1)
     st.write("Predicted compressive strength is: " + str(CS) + " MPa")
-    else:
+else:
     st.write("Error in inputs: Compressive strength could not be predicted.")
 
 st.write("Note: The predicted values are based on machine learning models developed by the author. "
