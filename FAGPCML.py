@@ -1,8 +1,8 @@
+import streamlit as st; from PIL import Image
 import joblib
-import streamlit as st
-from PIL import Image
 import pandas as pd
 import numpy as np
+
 
 # Load models
 RF = joblib.load('RF.joblib')
