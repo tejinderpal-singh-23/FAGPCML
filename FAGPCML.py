@@ -1,9 +1,9 @@
 import streamlit as st; from PIL import Image
-import joblib
+# import joblib
 import pandas as pd
 import numpy as np
 
-
+'''
 # Load models
 RF = joblib.load('RF.joblib')
 DTR = joblib.load('DTR.joblib')
@@ -77,7 +77,7 @@ elif selected_model == 'LR_model':
     st.write("Predicted compressive strength is: " + str(CS) + " MPa")
 else:
     st.write("Error in inputs: Compressive strength could not be predicted.")
-
+'''
 st.write("Note: The predicted values are based on machine learning models developed by the author. "
          "The research is in initial stages and the values are just for giving a rough idea of the properties of Fly ash based geopolymer concrete. "
          "The results shall not be considered as final and experimental assessment of properties shall be done in practice.")
